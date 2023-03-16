@@ -12,3 +12,14 @@ Pour ce faire, le marchand devrait être en mesure de soumettre une demande à l
 Une demande de paiement devrait inclure des champs appropriés tels que le numéro de carte, la date d'expiration, le montant, la devise et le code CVV.
 Note : Simulation de la banque Dans cette solution, nous simulons la partie Banque du flux de traitement. Ce composant devrait pouvoir être remplacé par une vraie banque une fois que nous passerons en production. Nous devrions supposer qu'une réponse de la banque renvoie un identifiant unique et un statut qui indique si le paiement a été réussi.
 Récupération des détails d'un paiement La deuxième exigence pour la passerelle de paiement est de permettre à un marchand de récupérer les détails d'un paiement précédemment effectué en utilisant son identifiant. Cela aidera le marchand pour ses besoins de rapprochement et de reporting. La réponse devrait inclure un numéro de carte masqué et les détails de la carte ainsi qu'un code d'état qui indique le résultat du paiement.
+
+
+## Spécifications technique:
+
+- Net core 3.0
+- MediatR 8.0
+- EntityFrameworkCore.SqlServer
+- Swagger (Swashbuckle) 5.0
+- Microsoft.Extensions.Logging.Debug 3.0
+- Automapper 7.0
+![image](https://user-images.githubusercontent.com/1537858/225599720-c956b07e-5f52-42ed-a6ff-396028f7ad56.png)
